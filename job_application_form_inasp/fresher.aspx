@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <h1 align="center" style="color:blue;">Welcome To Fresher IT Job Application Form</h1>
-            <h3 align="left" style="color:brown;">Personal Details</h3>
+            <h2 align="left" style="color:brown;">Personal Details</h2>
             <section>
             <!--first name-->
             First Name:<asp:TextBox ID="txtfname" runat="server"></asp:TextBox>
@@ -48,7 +48,7 @@
             <asp:RequiredFieldValidator ID="rfvarea" runat="server" ControlToValidate="txtarea"
                 ErrorMessage="Please enter Address" ForeColor="Red"></asp:RequiredFieldValidator><br /><br />
             </section>
-            <h3 align="left" style="color:brown;">Educational Details</h3>
+            <h2 align="left" style="color:brown;">Educational Details</h2>
             <!--SSC Details-->
             <h5 align="left" style="color:forestgreen;">SSC Details</h5>
             SSC School Name:<asp:TextBox ID="txtsname" runat="server"></asp:TextBox>
@@ -122,6 +122,15 @@
             University name<asp:TextBox ID="txtupgname" runat="server"></asp:TextBox><br /><br />
             Year of passing<asp:TextBox ID="txtupgyear" runat="server"></asp:TextBox><br /><br />
             PG percentage<asp:TextBox ID="txtupgper" runat="server"></asp:TextBox>
+            <!--Skill Set-->
+            <h2 align="left" style="color:brown;">Skill set</h2>
+            Operating Systems:<textarea id="txtareaos" runat="server"></textarea><br /><br />
+            Programming Languages:<textarea id="txtareapl" runat="server"></textarea><br /><br />
+            DataBases:<textarea id="txtareadb" runat="server"></textarea><br /><br />
+            Networks:<textarea id="txtareanw" runat="server"></textarea><br /><br />
+            Other Skills:<textarea id="txtareaothers" runat="server"></textarea><br /><br />
+            <asp:Button ID="btnsubmit" runat="server" Text="Submit" />
+            
             
         </div>
     </form>
